@@ -6,7 +6,9 @@ pipeline {
 	stages { 
 	
 		stage('Git Clone'){
-			git credentialsId: 'a48dea7f-7556-4b44-bdfa-85622fa1cf1b', url: 'git@github.com:Xxxz2016/pipeline.git'
+			steps{
+				git credentialsId: 'a48dea7f-7556-4b44-bdfa-85622fa1cf1b', url: 'git@github.com:Xxxz2016/pipeline.git'
+			}
 		}
 	
 		stage('Build') { 
