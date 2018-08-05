@@ -41,6 +41,7 @@ pipeline {
 		
 		success { 
 			echo 'I succeeeded!' 
+			mail bcc: '', body: 'email send test', cc: '', from: '', replyTo: '', subject: 'pipeline test', to: '374128830@qq.com'
 		} 
 		
 		unstable { 
